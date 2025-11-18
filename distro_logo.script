@@ -1,0 +1,7 @@
+# display distro logo
+distro_image = Image("logo.png"); # change filename accordingly
+distro_sprite = Sprite();
+
+distro_sprite.SetImage(distro_image);
+distro_sprite.SetX(Window.GetX() + (Window.GetWidth() / 2 - distro_image.GetWidth() / 2)); # center the image horizontally
+distro_sprite.SetY(Window.GetHeight() - distro_image.GetHeight() - 50); # display just above the bottom of the screen
